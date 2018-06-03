@@ -7,6 +7,7 @@ export const requestList = () => {
 }
 
 export const populateList = newList => {
+    debugger
     return {
         type: POPULATE_LIST,
         newList
