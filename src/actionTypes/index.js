@@ -1,0 +1,2 @@
+export const REQUEST_LIST = 'REQUEST_LIST'
+export const POPULATE_LIST = 'POPULATE_LIST'
