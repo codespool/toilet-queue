@@ -1,15 +1,23 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 import store from './store'
-
-class App extends Component {
+import glamorous from 'glamorous';
+import { ToiletList } from './components'
+export default class App extends Component {
   render() {
     return (
       <Provider store={store} >
-        <div>lalala</div>
+        <Wrapper>
+          <ToiletList />
+        </Wrapper>
       </Provider>
     );
   }
 }
 
-export default App;
+const Wrapper = glamorous.div({
+  width: '100vw',
+  height: '100vh',
+  display: 'flex',
+  justifyContent: 'center'
+})
