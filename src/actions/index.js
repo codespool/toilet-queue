@@ -1,4 +1,4 @@
-import { REQUEST_LIST, POPULATE_LIST } from '../actionTypes'
+import { REQUEST_LIST, POPULATE_LIST, SET_FILTER, SET_LOADING } from '../actionTypes'
 
 export const requestList = () => {
     return {
@@ -7,9 +7,22 @@ export const requestList = () => {
 }
 
 export const populateList = newList => {
-    debugger
     return {
         type: POPULATE_LIST,
         newList
+    }
+}
+
+export const setFilter = filter => {
+    return {
+        type: SET_FILTER,
+        filter
+    }
+}
+
+export const setLoading = isLoading => {
+    return {
+        type: SET_LOADING,
+        isLoading
     }
 }
