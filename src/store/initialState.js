@@ -1,8 +1,8 @@
 export default {
-    toilets: {
-        toiletList: [],
-        filter: 'all',
-        filteredList: [],
-        isLoading: false
-    }
+  toilets: {
+    toiletList: [],
+    filter: 'all',
+    filteredList: [],
+    isLoading: false
+  }
 }

@@ -1,2 +1,2 @@
 export { ToiletList } from './ToiletList.component'
-export { ToiltetCard } from './ToiletCard.component'
+export { ToiletCard } from './ToiletCard.component'

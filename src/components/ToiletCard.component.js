@@ -1,7 +1,12 @@
 import React from 'react'
 import glamorous from 'glamorous'
 
-export const ToiletCard = function ToiletCard ({type, waitingTime,queueLength, where}) {
+export const ToiletCard = function ToiletCard ({
+  type,
+  waitingTime,
+  queueLength,
+  where
+}) {
   return (
     <Wrapper>
       <p>

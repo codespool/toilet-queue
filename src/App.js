@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 import store from './store'
-import glamorous from 'glamorous';
+import glamorous from 'glamorous'
 import { ToiletList } from './components'
 export default class App extends Component {
-  render() {
+  render () {
     return (
-      <Provider store={store} >
+      <Provider store={store}>
         <Wrapper>
           <ToiletList />
         </Wrapper>
       </Provider>
-    );
+    )
   }
 }
 

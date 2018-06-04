@@ -5,11 +5,11 @@ import { getList } from '../lib/fetcher'
 import { REQUEST_LIST } from '../actionTypes'
 import { populateList, setLoading } from '../actions'
 
-export default function * rootSaga() {
-    yield takeEvery(REQUEST_LIST, makeListRequest)
+export default function * rootSaga () {
+  yield takeEvery(REQUEST_LIST, makeListRequest)
 }
 
-function * makeListRequest(action) {
+function * makeListRequest (action) {
   try {
     yield put(setLoading(true))
     const response = yield call(getList)
